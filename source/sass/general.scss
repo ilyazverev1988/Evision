@@ -11,6 +11,23 @@
   overflow: hidden;
 }
 
-.body {
-  font-family: $Oswald;
+body {
+  font-family: $Avenir;
+  box-sizing: border-box;
+  min-width: 320px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

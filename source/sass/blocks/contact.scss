@@ -1,29 +1,29 @@
-.contact__label {
-  color: #222222;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  white-space: nowrap;
+.contact__social-icon {
+  align-items: center;
+  justify-content: space-between;
+  width: 33%;
+  max-width: 150px;
+  display: none;
 }
 
-.contact__input {
-  color: #444444;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: 100%;
-  margin-left: 16px;
+.contact__telephone {
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
 }
 
-.contact__item {
-  display: flex;
+@media (min-width: $tablet-width) {
+  .contact__social-icon {
+    display: flex;
+  }
+
+  .contact__telephone {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .contact__item {
-    width: 570px;
-    margin-right: 78px;
+  .contact__telephone {
+    font-size: 18px;
   }
 }

@@ -1,0 +1,43 @@
+.skill__word {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.skill__item {
+  text-align: center;
+  margin: 0 auto;
+
+  &:last-child {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .skill__img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .skill__item:last-child {
+    width: auto;
+  }
+
+  .skill__word {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .skill__img {
+    width: 225px;
+    height: 225px;
+  }
+
+  .skill__word {
+    margin-top: 19px;
+    font-size: 27px;
+    line-height: 65px;
+  }
+}

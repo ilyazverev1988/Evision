@@ -1,15 +1,23 @@
 @font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: normal;
+  font-family: "Avenir";
+  src: url("../fonts/Avenir-Black.woff2") format("woff2"),
+    url("../fonts/Avenir-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
+  font-family: "Avenir";
+  src: url("../fonts/Avenir-Heavy.woff2") format("woff2"),
+    url("../fonts/Avenir-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir-Medium.woff2") format("woff2"),
+    url("../fonts/Avenir-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
