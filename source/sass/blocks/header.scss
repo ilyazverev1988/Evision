@@ -16,7 +16,7 @@
   max-width: 200px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 .header__contact {
@@ -24,7 +24,7 @@
   width: 45%;
   max-width: 200px;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   flex-shrink: 1;
 }
 

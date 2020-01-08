@@ -1,19 +1,27 @@
 .evision {
   background-color: #161851;
-  background-attachment: fixed;
+  /*background-attachment: fixed;
   height: 100%;
+  position: relative;*/
   position: relative;
+  height: 100vh;
+  //background: url("../img/bg.jpg") no-repeat center 0 / cover;
+  background-attachment: fixed;
 
   &::after {
-    content: "";
+    /*content: "";*/
     position: absolute;
-    top: 22%;
-    left: 26%;
+    top: 0;
+    left: 50%;
+    background-image: url("../img/circle.png");
     width: 744px;
-    height: 744px;
-    border-radius: 50%;
-    background: #1b1d60;
+    min-height: 557px;
     opacity: 0.3;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-left: -372px;
+    background-color: #161851;
+    z-index: -1;
   }
 }
 
