@@ -1,0 +1,53 @@
+.carousel_date {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff6161;
+  opacity: 0.7;
+}
+
+.carousel__header {
+  font-weight: 800;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.carousel__about {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+  max-height: 90px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.carousel__link {
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #ff6161;
+}
+
+.carousel__wrap {
+  border: 1px solid #ffffff;
+  margin: 15px 20px;
+  padding: 10px 10px;
+  min-height: 314px;
+}
+
+.news .lSPager.lSpg {
+  display: none !important;
+}
+
+@media (min-width: $tablet-width) {
+  .carousel__wrap {
+    margin: 30px 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .carousel__wrap {
+    margin: 0;
+  }
+
+}

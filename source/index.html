@@ -6,8 +6,6 @@
   <title>Evision</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
   <link rel="preload" href="fonts/Avenir-Black.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Avenir-Heavy.woff2" as="font" crossorigin="anonymous">
@@ -19,7 +17,7 @@
     <div class="header__wrap">
       <div class="header__menu menu">
         <img class="menu__hamburger" src="/img/icons8-menu.svg" alt="меню" width="26" height="26">
-        <img class="menu__logo" src="/img/logo.svg" alt="логотип" width="100" height="29">
+        <a href=""><img class="menu__logo" src="/img/logo.svg" alt="логотип" width="100" height="29"></a>
       </div>
       <div class="header__contact contact">
         <a class="contact__telephone" href="tel:+78362338008">+7 (836) 233-80-08</a>
@@ -35,135 +33,123 @@
       </div>
     </div>
   </header>
-  <section class="evision">
-    <h1 class="evision__smart">Умное<br> видеонаблюдение</h1>
-    <ul class="evision__list skill">
-      <li class="skill__item"><img class="skill__img" src="/img/see.png" alt="видим" width="120" height="120">
-        <p class="skill__word">Видим</p>
-      </li>
-      <li class="skill__item"><img class="skill__img" src="img/analize.png" alt="анализируем" width="120" height="120">
-        <p class="skill__word">Анализируем</p>
-      </li>
-      <li class="skill__item"><img class="skill__img" src="/img/analize.png" alt="Действуем" width="120" height="120">
-        <p class="skill__word">Действуем</p>
-      </li>
-    </ul>
-  </section>
-  <section class="product">
-    <div id="myCarousel" class="carousel slide bg-inverse ml-auto mr-auto" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="d-block w-100">
-            <div class="product__item .col-sm-10">
-              <div class="product__wrap">
-                <picture>
-                  <source media="(min-width:1300px)" srcset="img/nvr+elipse.png">
-                  <img class="product__image product__image--nvr" src="/img/nvr.png" alt="видеосервер nvr">
-                </picture>
-              </div>
-              <div class="product__wrap-text">
-                <p class="product__name">eVision NVR</p>
-                <p class="product__more">Интеллектуальный видеосервер</p>
-                <a class="product__link" href="">Узнать подробнее</a>
-              </div>
+  <main>
+    <section class="evision">
+      <h1 class="evision__smart">Умное<br> видеонаблюдение</h1>
+      <ul class="evision__list skill">
+        <li class="skill__item"><img class="skill__img" src="/img/see.png" alt="видим" width="120" height="120">
+          <p class="skill__word">Видим</p>
+        </li>
+        <li class="skill__item"><img class="skill__img" src="img/analize.png" alt="анализируем" width="120"
+            height="120">
+          <p class="skill__word">Анализируем</p>
+        </li>
+        <li class="skill__item"><img class="skill__img" src="/img/analize.png" alt="Действуем" width="120" height="120">
+          <p class="skill__word">Действуем</p>
+        </li>
+      </ul>
+    </section>
+    <section class="product">
+      <ul class="product__list" id="lightSlider">
+        <li class="product__item">
+          <div class="product__wrap-item">
+            <div class="product__wrap">
+              <picture>
+                <source media="(min-width:1300px)" srcset="img/intercom+eclipse.png">
+                <img class="product__image product__image--intercom" src="/img/intercom.png" alt="intercom">
+              </picture>
+            </div>
+            <div class="product__wrap-text">
+              <p class="product__name">eVision Intercom</p>
+              <p class="product__more">комфорт и безопастность в каждый дом</p>
+              <a class="product__link" href="">Узнать подробнее</a>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="d-block w-100">
-            <div class="product__item">
-              <div class="product__wrap">
-                <picture>
-                  <source media="(min-width:1300px)" srcset="img/intercom+eclipse.png">
-                  <img class="product__image product__image--intercom" src="/img/intercom.png" alt="intercom">
-                </picture>
-              </div>
-              <div class="product__wrap-text">
-                <p class="product__name">eVision Intercom</p>
-                <p class="product__more">комфорт и безопастность в каждый дом</p>
-                <a class="product__link" href="">Узнать подробнее</a>
-              </div>
+        </li>
+        <li class="product__li">
+          <div class="product__wrap-item">
+            <div class=" product__wrap">
+              <picture>
+                <source media="(min-width:1300px)" srcset="img/nvr+elipse.png">
+                <img class="product__image product__image--nvr" src="/img/nvr.png" alt="видеосервер nvr">
+              </picture>
+            </div>
+            <div class="product__wrap-text">
+              <p class="product__name">eVision NVR</p>
+              <p class="product__more">Интеллектуальный видеосервер</p>
+              <a class="product__link" href="">Узнать подробнее</a>
             </div>
           </div>
+        </li>
+      </ul>
+    </section>
+    <section class="news">
+      <div class="news__wrraper">
+        <div class="news__help">
+          <h2 class="news__header">Остались вопросы?</h2>
+          <p class="news__consult">Получите бесплатную консультацию нашего технического специалиста</p>
+          <a class="news__link" href="">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
         </div>
-      </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Предыдущий</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Следующий</span>
-      </a>
-  </section>
-  <section class="news">
-    <div class="news__help">
-      <h2>Остались вопросы?</h2>
-      <p>Получите бесплатную консультацию нашего технического специалиста</p>
-      <a href="">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+        <div class="news__carousel carousel">
+          <ul class="carousel__list" id="lightSlider2">
+            <li class="carousel__item">
+              <div class="carousel__wrap">
+                <p class="carousel_date">1 августа</p>
+                <h2 class="carousel__header">Правовые вопросы видеонаблюдения (часть 1)</h2>
+                <p class="carousel__about">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                  несколько
+                  абзацев более менее осмысленного текста...</p>
+                <a class="carousel__link" href="">ЧИТАТЬ НОВОСТЬ</a>
+              </div>
+            </li>
+            <li class="carousel__item">
+              <div class="carousel__wrap">
+                <p class="carousel_date">2 августа</p>
+                <h2 class="carousel__header">Правовые вопросы видеонаблюдения (часть 2)</h2>
+                <p class="carousel__about">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                  несколько
+                  абзацев более менее осмысленного текста...</p>
+                <a class="carousel__link" href="">ЧИТАТЬ НОВОСТЬ</a>
+              </div>
+            </li>
+            <li class="carousel__item">
+              <div class="carousel__wrap">
+                <p class="carousel_date">3 августа</p>
+                <h2 class="carousel__header">Правовые вопросы видеонаблюдения (часть 3)</h2>
+                <p class="carousel__about">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                  несколько
+                  абзацев более менее осмысленного текста...</p>
+                <a class="carousel__link" href="">ЧИТАТЬ НОВОСТЬ</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__main">
+      <a class="footer__logo" href=""><img class="menu__logo" src="/img/logo.svg" alt="логотип" width="100"
+          height="29"></a>
+      <a href="">Главная</a>
+      <a href="">Блог</a>
+      <a class="contact__telephone" href="tel:+78362338008">+7 (836) 233-80-08</a>
     </div>
-    <div class="news__carousel">
-      <div class="demo">
-        <ul id="lightSlider">
-          <li>
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
-          </li>
-          <li>
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
-          </li>
-          <li>
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
-          </li>
-          <li>
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
-          </li>
-          <li>
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
-          </li>
-          <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
-          </li>
-          <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
-          </li>
-          <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
-          </li>
-          <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
-          </li>
-          <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
-          </li>
-          <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
-          </li>
-          <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
-            <img src="https://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
-          </li>
-        </ul>
-      </div>
+    <div class="footer__second">
+      <p>©2020, Все права защищены</p>
+      <a href="">Купить</a>
+      <a href="">О компании</a>
+      <p><a href="mailto:evision.tech@mail.ru">evision.tech@mail.ru</a></p>
+      <ul class="contact__social-icon">
+        <li><a href="" aria-label="ссылка в фейсбуке"><img src="/img/facebook.svg" alt="ссылка в фейсбуке" width="15.68"
+              height="27.57"></a></li>
+        <li><a href="" aria-label="ссылка в контакте"><img src="/img/vk.svg" alt="ссылка в контакте" width="34"
+              height="19.83"></a></li>
+        <li><a href="" aria-label="мы в ютубе"><img src="/img/tube.svg" alt="мы в ютубе" width="30.02"
+              height="23.06"></a></li>
+      </ul>
     </div>
-  </section>
-  <!-- Библиотека jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-
-  <!-- Popper.js для всплывающих подсказок -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-
-  <!-- Последний скомпилированный и минимизированный Bootstrap JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-
+    </div>
+  </footer>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/lightslider.js"></script>
   <script type="text/javascript">
@@ -175,6 +161,56 @@
         controls: true,
         pager: true,
         enableDrag: true,
+        item: 1,
+        slideMove: 1,
+        adaptiveHeight: true,
+        responsive: [{
+            breakpoint: 1300,
+            settings: {
+              item: 1,
+              slideMove: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              item: 1,
+              slideMove: 1
+            }
+          }
+        ]
+      });
+    });
+
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#lightSlider2").lightSlider({
+        auto: true,
+        loop: true,
+        pauseOnHover: true,
+        controls: false,
+        pager: true,
+        enableDrag: true,
+        item: 2,
+        slideMove: 1,
+        slideMargin: 32,
+        responsive: [{
+            breakpoint: 1300,
+            settings: {
+              item: 1,
+              slideMove: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              item: 1,
+              slideMove: 1
+            }
+          }
+        ]
       });
     });
 

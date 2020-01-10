@@ -9,7 +9,7 @@
   background-attachment: fixed;
 
   &::after {
-    content: "";
+    //content: "";
     position: absolute;
     top: 0;
     left: 50%;
@@ -31,6 +31,7 @@
   font-size: 26px;
   line-height: 32px;
   margin: 0;
+  padding-top: 40px;
 }
 
 .evision__list {
@@ -44,6 +45,7 @@
 @media (min-width: $tablet-width) {
   .evision__smart {
     font-size: 32px;
+    padding-top: 45px;
   }
 }
 
