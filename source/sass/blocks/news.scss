@@ -1,7 +1,7 @@
 .news {
   background: #161851;
   margin: 0 auto;
-  border-bottom: 1px solid #5C5D85;
+  border-bottom: 1px solid #5c5d85;
 }
 
 .news__wrraper {
@@ -63,6 +63,18 @@
     flex-direction: row-reverse;
     max-width: 1300px;
     margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 267px;
+      height: 379px;
+      background-image: url("../img/camera.png");
+      top: -265px;
+      right: -36px;
+      z-index: -1;
+    }
   }
 
   .news__help {
@@ -73,20 +85,5 @@
   .news__carousel {
     width: 60%;
     padding-right: 30px;
-  }
-
-  .news {
-    position: relative;
-  }
-
-  .news::before {
-    content: "";
-    position: absolute;
-    width: 267px;
-    height: 379px;
-    background-image: url("../img/camera.png");
-    top: -265px;
-    right: 160px;
-    z-index: -1;
   }
 }

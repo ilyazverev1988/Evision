@@ -5,6 +5,10 @@
   opacity: 0.7;
 }
 
+.active .carousel__wrap {
+  border: 1px solid #ff6161;
+}
+
 .carousel__header {
   font-weight: 800;
   font-size: 22px;
@@ -40,14 +44,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .carousel__wrap {
+  /*.carousel__wrap {
     margin: 30px 100px;
-  }
+  }*/
 }
 
 @media (min-width: $desktop-width) {
   .carousel__wrap {
     margin: 0;
   }
-
 }

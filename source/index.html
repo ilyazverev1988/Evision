@@ -127,27 +127,33 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__main">
-      <a class="footer__logo" href=""><img class="menu__logo" src="/img/logo.svg" alt="логотип" width="100"
-          height="29"></a>
-      <a href="">Главная</a>
-      <a href="">Блог</a>
-      <a class="contact__telephone" href="tel:+78362338008">+7 (836) 233-80-08</a>
+    <div class="footer__wrap-desktop">
+      <div class="footer__wrap-1">
+        <a class="footer__logo" href=""><img class="footer__logo-img" src="/img/logo.svg" alt="логотип" width="100"
+            height="29"></a>
+        <p class="footer__rights">©2020, Все права защищены</p>
+      </div>
+      <div class="footer__wrap-2">
+        <a class="footer__main" href="">Главная</a>
+        <a class="footer__blog" href="">Блог</a>
+      </div>
+      <div class="footer__wrap-3">
+        <a class="footer__buy" href="">Купить</a>
+        <a class="footer__about" href="">О компании</a>
+      </div>
+      <div class="footer__wrap-4">
+        <a class="footer__telephone" href="tel:+78362338008">+7 (836) 233-80-08</a>
+        <a class="footer__mail" href="mailto:evision.tech@mail.ru">evision.tech@mail.ru</a>
+      </div>
     </div>
-    <div class="footer__second">
-      <p>©2020, Все права защищены</p>
-      <a href="">Купить</a>
-      <a href="">О компании</a>
-      <p><a href="mailto:evision.tech@mail.ru">evision.tech@mail.ru</a></p>
-      <ul class="contact__social-icon">
-        <li><a href="" aria-label="ссылка в фейсбуке"><img src="/img/facebook.svg" alt="ссылка в фейсбуке" width="15.68"
-              height="27.57"></a></li>
-        <li><a href="" aria-label="ссылка в контакте"><img src="/img/vk.svg" alt="ссылка в контакте" width="34"
-              height="19.83"></a></li>
-        <li><a href="" aria-label="мы в ютубе"><img src="/img/tube.svg" alt="мы в ютубе" width="30.02"
-              height="23.06"></a></li>
-      </ul>
-    </div>
+    <ul class="footer__social-icon">
+      <li><a href="" aria-label="ссылка в фейсбуке"><img src="/img/facebook.svg" alt="ссылка в фейсбуке" width="15.68"
+            height="27.57"></a></li>
+      <li><a href="" aria-label="ссылка в контакте"><img src="/img/vk.svg" alt="ссылка в контакте" width="34"
+            height="19.83"></a></li>
+      <li><a href="" aria-label="мы в ютубе"><img src="/img/tube.svg" alt="мы в ютубе" width="30.02" height="23.06"></a>
+      </li>
+    </ul>
     </div>
   </footer>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -165,19 +171,19 @@
         slideMove: 1,
         adaptiveHeight: true,
         responsive: [{
-            breakpoint: 1300,
-            settings: {
-              item: 1,
-              slideMove: 1,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              item: 1,
-              slideMove: 1
-            }
+          breakpoint: 1300,
+          settings: {
+            item: 1,
+            slideMove: 1,
           }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            item: 1,
+            slideMove: 1
+          }
+        }
         ]
       });
     });
@@ -197,19 +203,19 @@
         slideMove: 1,
         slideMargin: 32,
         responsive: [{
-            breakpoint: 1300,
-            settings: {
-              item: 1,
-              slideMove: 1,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              item: 1,
-              slideMove: 1
-            }
+          breakpoint: 1299,
+          settings: {
+            item: 2,
+            slideMove: 1,
           }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            item: 1,
+            slideMove: 1
+          }
+        }
         ]
       });
     });
